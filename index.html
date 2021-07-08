@@ -4,273 +4,284 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/6ff76a1661.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./modernizer/modernizr-custom.js"></script>
     <title>Cloudbudget</title>
   </head>
   <body>
     <header class="header">
-      <div class="container top">
-        <div class="header__inner">
-          <a class="header__logo" href="#">
-            <i class="fas fa-cloud"></i>
-            Cloudbudget
-          </a>
-
-          <nav class="nav">
-            <a class="nav__link" href="#">OVERWIEW</a>
-            <a class="nav__link" href="#">FEATURES</a>
-            <a class="nav__link" href="#">TECHNOLOGY</a>
-            <a class="nav__link" href="#">CONTACT</a>
-            <a class="nav__link" href="#">SIGN UP</a>
-          </nav>
-          <div class="btn-nav">
-            <i class="fas fa-globe-americas globe-america nav__link"> EN</i>
-            <a class="btn-login" href="#">Login</a>
-          </div>
+      <div class="container header__inner">
+        <a class="header__logo" href="/">
+          <img class="logo-icon" src="./images/cloud.png" />
+          Cloudbudget
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="#">Overwiew</a>
+          <a class="nav__link" href="#">Features</a>
+          <a class="nav__link" href="#">Technology</a>
+          <a class="nav__link" href="#">Contact</a>
+          <a class="nav__link" href="#">Sign Up</a>
+        </nav>
+        <div class="btn-nav">
+          <i class="fas fa-globe-americas globe-america nav__link"> EN</i>
+          <a class="btn btn-login btn-secondary" href="#">Login</a>
         </div>
       </div>
     </header>
 
     <section class="intro">
-      <div class="intro__inner">
+      <div class="container intro__inner">
         <h1 class="intro__title">CloudBudget</h1>
-        <h2 class="intro__suptitle">
+        <h2 class="intro__subtitle">
           Cloud budget management for everyone. Only <br />€69.95 a Month After
           a 7 Day Trial of <br />
           Up to €4.99
         </h2>
-        <a class="btn" href="#">Sign Up</a>
+        <a class="btn btn-primary" href="#">Sign Up</a>
       </div>
     </section>
 
-    <main class="main__section">
-      <div class="main__container">
-        <div class="main__text-container">
-          <h2 class="main__section-text">
-            Easy to Use Cloud Budget<br />
-            Management Software
-          </h2>
-          <p class="card__text">
-            Our software is made so you can access and manage your budget and<br />
-            expenses online at any time from any device. It provides detailed
-            income<br />
-            and expense reports with graphs so you can easilly see your
-            spending<br />
-            patterns and budget at a glance. Read below to find out more.
-          </p>
-          <p class="card__text-red">Learn More</p>
+    <main class="main">
+      <section class="main__section-top">
+        <div class="container main__container">
+          <div class="main__wrap">
+            <h2 class="main__title-text">
+              Easy to Use Cloud Budget Management Software
+            </h2>
+            <p class="main__text">
+              Our software is made so you can access and manage your budget and
+              expenses online at any time from any device. It provides detailed
+              income and expense reports with graphs so you can easilly see your
+              spending patterns and budget at a glance. Read below to find out
+              more.
+            </p>
+            <a href="#" class="more-link">Learn More</a>
+          </div>
+          <picture class="img-wrap">
+            <source srcset="/images/Video_bg.webp" type="image/webp" />
+            <source srcset="/images/Video_bg.png" type="image/png" />
+
+            <img
+              class="main__img"
+              src="images/Video_bg.png"
+              alt="people in the room"
+              width="1.5"
+              height="1"
+            />
+            <button class="play-btn"><i class="fas fa-play"></i></button>
+          </picture>
         </div>
-        <div class="img__container">
-          <img
-            src="./assets/images/Video_bg.png"
-            alt="people in the room"
-            width="450"
-            height="320"
-          />
-          <img class="circle__play" src="/assets/images/Ellipse 1.png" />
-          <img class="arrow__play" src="/assets/images/PlaySolid(F5B0).png" />
+      </section>
+
+      <section class="section__cards">
+        <h2 class="section__title">Features</h2>
+        <div class="container main__container">
+          <div class="card">
+            <div class="card-header">
+              <picture>
+                <source srcset="/images/Bg.webp" type="image/webp" />
+                <source srcset="/images/Bg.png" type="image/png" />
+                <img
+                  class="card__img"
+                  src="images/Bg.png"
+                  width="350"
+                  height="250"
+                  alt="hands with money"
+                />
+              </picture>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Supports All Currencies and Cards</h3>
+              <p class="card-text">
+                We support all popular currencies and is fully customizable to
+                add
+              </p>
+              <a href="#" class="card__link more-link">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <picture>
+                <source srcset="/images/hands_mobile.webp" type="image/webp" />
+                <source srcset="/images/hands_mobile.png" type="image/png" />
+                <img
+                  class="card__img"
+                  src="images/hands_mobile.png"
+                  width="350"
+                  height="250"
+                  alt="hands with mobile phone"
+                />
+              </picture>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Manage your expenses on the go</h3>
+              <p class="card-text">
+                You can access your account from anywhere in the world on any
+                device
+              </p>
+              <a href="#" class="card__link more-link">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <picture>
+                <source srcset="/images/room.webp" type="image/webp" />
+                <source srcset="/images/room.png" type="image/png" />
+                <img
+                  class="card__img"
+                  src="images/room.png"
+                  width="350"
+                  height="250"
+                  alt="room"
+                />
+              </picture>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Cloud Budget Management Software</h3>
+              <p class="card-text">
+                Our software is made so you can access and manage your budget
+              </p>
+              <a href="#" class="card__link more-link">Read More</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section>
+        <h2 class="section__title">Technology</h2>
+        <div class="container main__container">
+          <div class="numbers__item">
+            <span class="numbers__num">01</span>
+            <img class="icon__numbers" src="images/design_cloud.png" />
+            <h2 class="numbers__header">Cloud Storage</h2>
+            <p class="numbers__text">
+              Access your account from anywhere<br />
+              in the world on any device
+            </p>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__num">02</span>
+            <img class="icon__numbers" src="images/clue.png" />
+            <h2 class="numbers__header">Secure</h2>
+            <p class="numbers__text">
+              All your information is stored on<br />
+              secure cloud servers
+            </p>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__num">03</span>
+            <img class="icon__numbers" src="images/pdf.png" />
+            <h2 class="numbers__header">PDF Download</h2>
+            <p class="numbers__text">
+              Download any of your reports in<br />
+              PDF formate
+            </p>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__num">04</span>
+            <img class="icon__numbers" src="images/csv.png" />
+            <h2 class="numbers__header">CSV Download</h2>
+            <p class="numbers__text">
+              All your information is stored on<br />
+              secure cloud servers
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video__section">
+        <div class="container main__container">
+          <div class="main__text-container">
+            <h2 class="main__title-text">
+              Stay focused on saving<br />
+              money
+            </h2>
+            <p class="card__text">
+              It is important to stay focused on saving money in any way you
+              can. We<br />
+              help you monitor your spending habits so you can easily spot and
+              cut<br />
+              any unnecessary expenses. Simply join today to get started!
+            </p>
+            <nav class="video__section-icons">
+              <a href="#"><i class="fab fa-google-play"></i></a>
+              <a href="#"><i class="fab fa-app-store"></i></a>
+              <a href="#"><i class="fab fa-windows"></i></a>
+            </nav>
+          </div>
+
+          <picture class="img__container">
+            <source srcset="/images/video_man.webp" type="image/webp" />
+            <source srcset="/images/video_man.png" type="image/png" />
+            <img
+              src="./images/video_man.png"
+              alt="man on the couch"
+              width="445"
+              height="311"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
 
-    <section class="section__cards section__header">
-      <h2 class="section__title">Features</h2>
-      <div class="main__container-img">
-        <div class="card">
-          <div class="card-header">
-            <img
-              class="card__img"
-              src="./assets/images/Bg.png"
-              width="350"
-              height="250"
-              alt="hands with money"
-            />
-          </div>
-
-          <div class="card-content">
-            <h3 class="card-title">Supports All Currencies and Cards</h3>
-            <p class="card-text">
-              We support all popular currencies and is fully customizable to add
-            </p>
-            <a href="#" class="card__text-red bottom">Read More</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img
-              class="card__img"
-              src="./assets/images/hands_mobile.png"
-              width="350"
-              height="250"
-              alt="hands with mobile phone"
-            />
-          </div>
-
-          <div class="card-content">
-            <h3 class="card-title">Manage your expenses on the go</h3>
-            <p class="card-text">
-              You can access your account from anywhere in the world on any
-              device
-            </p>
-            <a href="#" class="card__text-red bottom">Read More</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <img
-              class="card__img"
-              src="./assets/images/room.png"
-              width="350"
-              height="250"
-              alt="room"
-            />
-          </div>
-
-          <div class="card-content">
-            <h3 class="card-title">Cloud Budget Management Software</h3>
-            <p class="card-text">
-              Our software is made so you can access and manage your budget
-            </p>
-            <a href="#" class="card__text-red bottom">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__header">
-      <h2 class="section__title">Technology</h2>
-    </section>
-
-    <section class="section__numbers">
-      <div class="numbers__inner">
-        <div class="numbers__item">
-          <span class="numbers__num">01</span>
-          <img class="icon__numbers" src="./assets/images/design_cloud.png" />
-          <h2 class="numbers__header">Cloud Storage</h2>
-          <p class="numbers__text">
-            Access your account from anywhere<br />
-            in the world on any device
-          </p>
-        </div>
-        <div class="numbers__item">
-          <span class="numbers__num">02</span>
-          <img
-            class="icon__numbers secure"
-            src="./assets/images/question.png"
-          />
-          <h2 class="numbers__header">Secure</h2>
-          <p class="numbers__text">
-            All your information is stored on<br />
-            secure cloud servers
-          </p>
-        </div>
-        <div class="numbers__item">
-          <span class="numbers__num">03</span>
-          <img class="icon__numbers pdf" src="./assets/images/pdf.png" />
-          <h2 class="numbers__header">PDF Download</h2>
-          <p class="numbers__text">
-            Download any of your reports in<br />
-            PDF formate
-          </p>
-        </div>
-        <div class="numbers__item">
-          <span class="numbers__num">04</span>
-          <img class="icon__numbers csv" src="./assets/images/csv.png" />
-          <h2 class="numbers__header">CSV Download</h2>
-          <p class="numbers__text">
-            All your information is stored on<br />
-            secure cloud servers
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="video__section">
-      <div class="video__inner">
-        <div class="main__text-container white">
-          <h2 class="main__section-text white">
-            Stay focused on saving<br />
-            money
-          </h2>
-          <p class="card__text white">
-            It is important to stay focused on saving money in any way you can.
-            We<br />
-            help you monitor your spending habits so you can easily spot and
-            cut<br />
-            any unnecessary expenses. Simply join today to get started!
-          </p>
-          <p class="video__section-icons">
-            <i class="fab fa-google-play"></i>
-            <i class="fab fa-app-store"></i>
-            <i class="fab fa-windows"></i>
-          </p>
-        </div>
-        <div class="img__container">
-          <img
-            src="./assets/images/video_man.png"
-            alt="man on the couch"
-            width="445"
-            height="311"
-          />
-        </div>
-      </div>
-    </section>
-
     <section class="form__section">
-      <div class="form__inner">
-        <div class="main__text-container form-text">
-          <h2 class="main__section-text form-header">Contact</h2>
-          <p class="card__text">
+      <div class="container main__container">
+        <div class="main__wrap form__wrap-text">
+          <h2 class="main__title-text form-contact">Contact</h2>
+          <p class="main__text">
             Questions or concerns? Just fill out the form below and our
             support<br />
             team will get back to you within 24 hours
           </p>
         </div>
-        <div class="form__container">
-          <form class="form" action="/" method="post">
-            <div class="form-group">
-              <label for="fname"></label>
-              <input type="text" name="firstname" placeholder="First name" />
-            </div>
+        <form class="form">
+          <input
+            class="short-field"
+            type="text"
+            name="firstname"
+            placeholder="First name"
+          />
+          <input
+            class="short-field"
+            type="text"
+            name="lastname"
+            placeholder="Last name"
+          />
+          <input
+            class="regular-field"
+            type="tel"
+            name="tel"
+            placeholder="Phone number"
+          />
 
-            <div class="form-group">
-              <label for="lname"></label>
-              <input type="text" name="lastname" placeholder="Last name" />
-            </div>
-            <div>
-              <label for="number"></label>
-              <input type="text" name="number" placeholder="Phone number" />
-            </div>
-            <div class="form-group">
-              <label for="service"></label>
-              <select name="service">
-                <option value="Consultation">Select Service</option>
-                <option value="Consultation">Consultation</option>
-                <option value="Advisory">Advisory</option>
-                <option value="USA Banking">USA Banking</option>
-              </select>
-            </div>
-            <div>
-              <button class="submit__btn" type="submit">Submit now</button>
-            </div>
-          </form>
-        </div>
+          <input
+            type="text"
+            class="regular-field"
+            name="service"
+            list="services"
+            placeholder="Select Service"
+          />
+          <datalist id="services">
+            <option value="Consultation"></option>
+            <option value="Advisory"></option>
+            <option value="USA Banking"></option>
+          </datalist>
+
+          <button class="btn btn-colored" type="submit">Submit now</button>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer__inner">
+      <div class="container main__container footer-container">
         <div class="footer__adress">
           <h3 class="footer__header">Adress</h3>
           <p class="footer__text">
@@ -284,15 +295,15 @@
           <h3 class="footer__header">Services</h3>
           <ul class="footer__links">
             <li>
-              <a class="footer__link" href="#">Overview</a>
+              <a class="footer__link more-link" href="#">Overview</a>
             </li>
-            <li><a class="footer__link" href="#">Features</a></li>
-            <li><a class="footer__link" href="#">Technology</a></li>
+            <li><a class="footer__link more-link" href="#">Features</a></li>
+            <li><a class="footer__link more-link" href="#">Technology</a></li>
             <li>
-              <a class="footer__link" href="#">Terms & Conditions</a>
+              <a class="footer__link more-link" href="#">Terms & Conditions</a>
             </li>
             <li>
-              <a class="footer__link" href="#">Privacy</a>
+              <a class="footer__link more-link" href="#">Privacy</a>
             </li>
           </ul>
         </div>
@@ -301,24 +312,26 @@
           <h3 class="footer__header">Get in Touch</h3>
           <ul class="footer__links">
             <li>
-              <a class="footer__link" href="mailto:info@cloudbudget.com"
+              <a
+                class="footer__link more-link"
+                href="mailto:info@cloudbudget.com"
                 >info@cloudbudget.com</a
               >
             </li>
             <li>
-              <a class="footer__link" href="tel:+1 844-721-7120"
+              <a class="footer__link more-link" href="tel:+1 844-721-7120"
                 >+1 844-721-7120</a
               >
             </li>
             <li>
-              <a class="footer__link" href="#"
-                ><i class="fab fa-facebook-f black-icon"></i
+              <a class="footer__link more-link" href="#"
+                ><i class="fab fa-facebook-f footer-icon"></i
               ></a>
-              <a class="footer__link" href="#"
-                ><i class="fab fa-linkedin-in black-icon"></i
+              <a class="footer__link more-link" href="#"
+                ><i class="fab fa-linkedin-in footer-icon"></i
               ></a>
-              <a class="footer__link" href="#"
-                ><i class="fab fa-twitter black-icon"></i
+              <a class="footer__link more-link" href="#"
+                ><i class="fab fa-twitter footer-icon"></i
               ></a>
             </li>
           </ul>
@@ -326,13 +339,15 @@
 
         <div class="footer__support">
           <h3 class="footer__header">We support</h3>
-          <img src="./assets/images/secure-p-1 1.png" />
+          <img src="images/secure-p-1 1.png" />
         </div>
       </div>
     </footer>
 
     <div class="copyright__section">
-      <p class="copyright">Copyright 2018 <span>CloudBudget</span></p>
+      <div class="container">
+        <p class="copyright">Copyright 2018 CloudBudget</p>
+      </div>
     </div>
   </body>
 </html>
