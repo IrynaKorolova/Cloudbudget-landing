@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/6ff76a1661.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
-    ></script>
-    <script src="./modernizer/modernizr-custom.js"></script>
+    />
+    <script async src="./js/modernizr-webp.js"></script>
     <title>Cloudbudget</title>
   </head>
   <body>
@@ -20,10 +22,10 @@
           Cloudbudget
         </a>
         <nav class="nav">
-          <a class="nav__link" href="#">Overwiew</a>
-          <a class="nav__link" href="#">Features</a>
-          <a class="nav__link" href="#">Technology</a>
-          <a class="nav__link" href="#">Contact</a>
+          <a class="nav__link" href="#overwiew">Overwiew</a>
+          <a class="nav__link" href="#features">Features</a>
+          <a class="nav__link" href="#technology">Technology</a>
+          <a class="nav__link" href="#contact">Contact</a>
           <a class="nav__link" href="#">Sign Up</a>
         </nav>
         <div class="btn-nav">
@@ -49,7 +51,7 @@
       <section class="main__section-top">
         <div class="container main__container">
           <div class="main__wrap">
-            <h2 class="main__title-text">
+            <h2 class="main__title-text" id="overwiew">
               Easy to Use Cloud Budget Management Software
             </h2>
             <p class="main__text">
@@ -61,39 +63,39 @@
             </p>
             <a href="#" class="more-link">Learn More</a>
           </div>
-          <picture class="img-wrap">
-            <source srcset="/images/Video_bg.webp" type="image/webp" />
-            <source srcset="/images/Video_bg.png" type="image/png" />
+          <div class="img-wrap">
+            <picture>
+              <source srcset="./images/Video_bg.webp" type="image/webp" />
+              <source srcset="./images/Video_bg.png" type="image/png" />
 
-            <img
-              class="main__img"
-              src="images/Video_bg.png"
-              alt="people in the room"
-              width="1.5"
-              height="1"
-            />
+              <img
+                class="main__img"
+                src="./images/Video_bg.png"
+                alt="people in the room"
+                width="1.5"
+                height="1"
+              />
+            </picture>
             <button class="play-btn"><i class="fas fa-play"></i></button>
-          </picture>
+          </div>
         </div>
       </section>
 
       <section class="section__cards">
-        <h2 class="section__title">Features</h2>
+        <h2 class="section__title" id="features">Features</h2>
         <div class="container main__container">
           <div class="card">
-            <div class="card-header">
-              <picture>
-                <source srcset="/images/Bg.webp" type="image/webp" />
-                <source srcset="/images/Bg.png" type="image/png" />
-                <img
-                  class="card__img"
-                  src="images/Bg.png"
-                  width="350"
-                  height="250"
-                  alt="hands with money"
-                />
-              </picture>
-            </div>
+            <picture>
+              <source srcset="./images/Bg.webp" type="image/webp" />
+              <source srcset="./images/Bg.png" type="image/png" />
+              <img
+                class="card__img"
+                src="./images/Bg.png"
+                width="1"
+                height="1.5"
+                alt="hands with money"
+              />
+            </picture>
 
             <div class="card-content">
               <h3 class="card-title">Supports All Currencies and Cards</h3>
@@ -107,13 +109,13 @@
           <div class="card">
             <div class="card-header">
               <picture>
-                <source srcset="/images/hands_mobile.webp" type="image/webp" />
-                <source srcset="/images/hands_mobile.png" type="image/png" />
+                <source srcset="./images/hands_mobile.webp" type="image/webp" />
+                <source srcset="./images/hands_mobile.png" type="image/png" />
                 <img
                   class="card__img"
-                  src="images/hands_mobile.png"
-                  width="350"
-                  height="250"
+                  src="./images/hands_mobile.png"
+                  width="1"
+                  height="1.5"
                   alt="hands with mobile phone"
                 />
               </picture>
@@ -136,9 +138,9 @@
                 <source srcset="/images/room.png" type="image/png" />
                 <img
                   class="card__img"
-                  src="images/room.png"
-                  width="350"
-                  height="250"
+                  src="./images/room.png"
+                  width="1"
+                  height="1.5"
                   alt="room"
                 />
               </picture>
@@ -155,12 +157,12 @@
         </div>
       </section>
 
-      <section>
-        <h2 class="section__title">Technology</h2>
+      <section class="technology__section">
+        <h2 class="section__title" id="technology">Technology</h2>
         <div class="container main__container">
           <div class="numbers__item">
             <span class="numbers__num">01</span>
-            <img class="icon__numbers" src="images/design_cloud.png" />
+            <img class="icon__numbers" src="./images/design_cloud.png" />
             <h2 class="numbers__header">Cloud Storage</h2>
             <p class="numbers__text">
               Access your account from anywhere<br />
@@ -169,7 +171,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">02</span>
-            <img class="icon__numbers" src="images/clue.png" />
+            <img class="icon__numbers" src="./images/clue.png" />
             <h2 class="numbers__header">Secure</h2>
             <p class="numbers__text">
               All your information is stored on<br />
@@ -178,7 +180,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">03</span>
-            <img class="icon__numbers" src="images/pdf.png" />
+            <img class="icon__numbers" src="./images/pdf.png" />
             <h2 class="numbers__header">PDF Download</h2>
             <p class="numbers__text">
               Download any of your reports in<br />
@@ -187,7 +189,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">04</span>
-            <img class="icon__numbers" src="images/csv.png" />
+            <img class="icon__numbers" src="./images/csv.png" />
             <h2 class="numbers__header">CSV Download</h2>
             <p class="numbers__text">
               All your information is stored on<br />
@@ -204,28 +206,34 @@
               Stay focused on saving<br />
               money
             </h2>
-            <p class="card__text">
+            <p class="video__section-text">
               It is important to stay focused on saving money in any way you
-              can. We<br />
-              help you monitor your spending habits so you can easily spot and
-              cut<br />
-              any unnecessary expenses. Simply join today to get started!
+              can. We help you monitor your spending habits so you can easily
+              spot and cut any unnecessary expenses. Simply join today to get
+              started!
             </p>
-            <nav class="video__section-icons">
-              <a href="#"><i class="fab fa-google-play"></i></a>
-              <a href="#"><i class="fab fa-app-store"></i></a>
-              <a href="#"><i class="fab fa-windows"></i></a>
-            </nav>
+            <ul class="video__section-icons">
+              <li>
+                <a href="#"><i class="fab fa-google-play"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-app-store"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-windows"></i></a>
+              </li>
+            </ul>
           </div>
 
-          <picture class="img__container">
-            <source srcset="/images/video_man.webp" type="image/webp" />
-            <source srcset="/images/video_man.png" type="image/png" />
+          <picture>
+            <source srcset="./images/video_man.webp" type="image/webp" />
+            <source srcset="./images/video_man.png" type="image/png" />
             <img
+              class="video__section-img"
               src="./images/video_man.png"
               alt="man on the couch"
-              width="445"
-              height="311"
+              width="1"
+              height="1.5"
             />
           </picture>
         </div>
@@ -235,7 +243,7 @@
     <section class="form__section">
       <div class="container main__container">
         <div class="main__wrap form__wrap-text">
-          <h2 class="main__title-text form-contact">Contact</h2>
+          <h2 class="main__title-text form-contact" id="contact">Contact</h2>
           <p class="main__text">
             Questions or concerns? Just fill out the form below and our
             support<br />
@@ -282,23 +290,29 @@
 
     <footer class="footer">
       <div class="container main__container footer-container">
-        <div class="footer__adress">
+        <address class="footer__adress">
           <h3 class="footer__header">Adress</h3>
           <p class="footer__text">
             Pipang Ltd, Griva Digeni,<br />
             81-83 Jacovides Tower, 1st Floor<br />
             1090 Picosia USA
           </p>
-        </div>
+        </address>
 
         <div class="footer__services">
           <h3 class="footer__header">Services</h3>
           <ul class="footer__links">
             <li>
-              <a class="footer__link more-link" href="#">Overview</a>
+              <a class="footer__link more-link" href="#overwiew">Overview</a>
             </li>
-            <li><a class="footer__link more-link" href="#">Features</a></li>
-            <li><a class="footer__link more-link" href="#">Technology</a></li>
+            <li>
+              <a class="footer__link more-link" href="#features">Features</a>
+            </li>
+            <li>
+              <a class="footer__link more-link" href="#technology"
+                >Technology</a
+              >
+            </li>
             <li>
               <a class="footer__link more-link" href="#">Terms & Conditions</a>
             </li>
@@ -339,7 +353,7 @@
 
         <div class="footer__support">
           <h3 class="footer__header">We support</h3>
-          <img src="images/secure-p-1 1.png" />
+          <img src="./images/secure-p-1 1.png" />
         </div>
       </div>
     </footer>
