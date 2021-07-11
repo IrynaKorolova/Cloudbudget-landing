@@ -341,7 +341,7 @@ button {
   font-size: 72px;
   font-weight: 700;
   line-height: 1.5;
-  padding-bottom: 39px;
+  margin-bottom: 39px;
 }
 
 .intro__subtitle {
@@ -620,6 +620,10 @@ select {
   color: var(--main-text-color, #000);
   font-size: 13px;
   line-height: 1.6;
+}
+
+.footer__adress {
+  width: 175px;
 }
 
 /*========== Copyright ==========*/
