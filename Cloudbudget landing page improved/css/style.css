@@ -257,7 +257,7 @@ button {
   transition: 0.3s;
 }
 .more-link:hover {
-  transform: scale(1.2);
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
 }
 /*============COMMON STYLES END============*/
 /*============ Header ============*/
@@ -276,6 +276,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__logo {
@@ -302,7 +303,7 @@ button {
 }
 
 .nav__link:hover {
-  transform: scale(1.1);
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
 }
 
 /*========== Intro =========*/
@@ -410,9 +411,6 @@ button {
 }
 
 /*==========Features Card Section =========*/
-.card > picture {
-  width: 100%;
-}
 
 .card {
   width: 350px;
@@ -435,7 +433,8 @@ button {
 .card__img {
   object-fit: cover;
   height: 250px;
-  width: 350px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .card-content {
@@ -472,7 +471,7 @@ button {
 .card__link:hover,
 .card__link:active,
 .card__link:focus {
-  transform: scale(1.2);
+  text-shadow: 0.3px 0 0, -0.3px 0 0, 0 0.3px 0, 0 -0.3px 0;
 }
 
 /*=========Technology Section =======*/
@@ -484,6 +483,9 @@ button {
   position: relative;
   font-size: 18px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .numbers__num {
@@ -511,10 +513,16 @@ button {
 }
 
 .icon__numbers {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
+  margin-top: -50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.design_cloud-img {
+  margin-top: -60px;
+  width: 65px;
+  height: 60px;
 }
 
 /*============ Video section ==========*/
@@ -567,6 +575,10 @@ button {
   gap: 30px;
 }
 
+.form__wrap-text {
+  width: 445px;
+}
+
 .regular-field {
   width: 100%;
 }
@@ -580,10 +592,6 @@ select {
   padding: 17px;
   border: 1px solid #ccc;
   border-radius: 6px;
-}
-
-.form__wrap-text {
-  align-self: flex-start;
 }
 
 /*=========== Footer ===========*/
@@ -632,4 +640,124 @@ select {
   background: #fafafa;
   padding-bottom: 86px;
   font-size: 12px;
+}
+
+/*============ Media Queries ==========*/
+
+/*===== Large devices (desktops, less than 1200px) ====*/
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .card {
+    width: 32%;
+  }
+  .card-content {
+    width: 85%;
+  }
+}
+
+/*===== Medium devices (tablets, less than 992px) =====*/
+@media (max-width: 992px) {
+  /*===== Container ====*/
+  .container {
+    max-width: 720px;
+  }
+  /*===== Header ====*/
+  .header__logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__inner {
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-bottom: 20px;
+  }
+  /*===== Intro and main buttons ====*/
+  .intro__title {
+    font-size: 52px;
+  }
+  .intro__subtitle {
+    font-size: 18px;
+  }
+  .btn-login {
+    padding: 8px 14px;
+  }
+  .btn-primary {
+    padding: 11px 36px;
+  }
+  /*===== Main ====*/
+  .main__img {
+    width: 300px;
+    height: 200px;
+  }
+  .main__wrap {
+    width: 350px;
+  }
+  .img-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .main__title-text {
+    font-size: 20px;
+  }
+  .main__text {
+    margin: 20px 0 18px 0;
+    font-size: 13px;
+  }
+  .play-btn {
+    width: 53px;
+    height: 53px;
+  }
+  /*===== Section with cards ====*/
+  .section__cards {
+    padding: 60px 0 60px;
+  }
+  .section__title {
+    font-size: 30px;
+  }
+  .container-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+  /*===== Section with numbers ====*/
+  .numbers__item {
+    width: 45%;
+  }
+  /*===== Video Section ====*/
+  .video__section-img {
+    width: 350px;
+    height: 250px;
+  }
+  .video__section-text {
+    margin: 18px 0;
+  }
+  .main__text-container {
+    width: 300px;
+    height: 200px;
+  }
+  /*===== Form ====*/
+  .form {
+    width: 400px;
+  }
+  .form__wrap-text {
+    width: 250px;
+  }
+}
+
+/*===== Small devices (landscape phones, less than 768px) ====*/
+@media (max-width: 768px) {
+}
+
+/*==== X-Small devices (portrait phones, less than 576px) ====*/
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }

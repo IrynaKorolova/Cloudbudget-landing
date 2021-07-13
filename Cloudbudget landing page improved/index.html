@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container header__inner">
         <a class="header__logo" href="/">
-          <img class="logo-icon" src="./images/cloud.png" />
+          <img class="logo-icon" src="./images/cloud.svg" />
           Cloudbudget
         </a>
         <nav class="nav">
@@ -83,7 +83,7 @@
 
       <section class="section__cards">
         <h2 class="section__title" id="features">Features</h2>
-        <div class="container main__container">
+        <div class="container main__container container-cards">
           <div class="card">
             <picture>
               <source srcset="./images/Bg.webp" type="image/webp" />
@@ -162,7 +162,10 @@
         <div class="container main__container">
           <div class="numbers__item">
             <span class="numbers__num">01</span>
-            <img class="icon__numbers" src="./images/design_cloud.png" />
+            <img
+              class="icon__numbers design_cloud-img"
+              src="./images/design_cloud.svg"
+            />
             <h2 class="numbers__header">Cloud Storage</h2>
             <p class="numbers__text">
               Access your account from anywhere<br />
@@ -171,7 +174,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">02</span>
-            <img class="icon__numbers" src="./images/clue.png" />
+            <img class="icon__numbers" src="./images/clue.svg" />
             <h2 class="numbers__header">Secure</h2>
             <p class="numbers__text">
               All your information is stored on<br />
@@ -180,7 +183,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">03</span>
-            <img class="icon__numbers" src="./images/pdf.png" />
+            <img class="icon__numbers" src="./images/pdf.svg" />
             <h2 class="numbers__header">PDF Download</h2>
             <p class="numbers__text">
               Download any of your reports in<br />
@@ -189,7 +192,7 @@
           </div>
           <div class="numbers__item">
             <span class="numbers__num">04</span>
-            <img class="icon__numbers" src="./images/csv.png" />
+            <img class="icon__numbers" src="./images/csv.svg" />
             <h2 class="numbers__header">CSV Download</h2>
             <p class="numbers__text">
               All your information is stored on<br />
@@ -243,10 +246,9 @@
     <section class="form__section">
       <div class="container main__container">
         <div class="main__wrap form__wrap-text">
-          <h2 class="main__title-text form-contact" id="contact">Contact</h2>
+          <h2 class="main__title-text" id="contact">Contact</h2>
           <p class="main__text">
-            Questions or concerns? Just fill out the form below and our
-            support<br />
+            Questions or concerns? Just fill out the form below and our support
             team will get back to you within 24 hours
           </p>
         </div>
@@ -256,18 +258,21 @@
             type="text"
             name="firstname"
             placeholder="First name"
+            required
           />
           <input
             class="short-field"
             type="text"
             name="lastname"
             placeholder="Last name"
+            required
           />
           <input
             class="regular-field"
             type="tel"
             name="tel"
             placeholder="Phone number"
+            required
           />
 
           <input
@@ -276,6 +281,7 @@
             name="service"
             list="services"
             placeholder="Select Service"
+            required
           />
           <datalist id="services">
             <option value="Consultation"></option>
