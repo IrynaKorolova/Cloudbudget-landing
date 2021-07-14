@@ -362,6 +362,7 @@ button {
 .main__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main__wrap {
@@ -642,29 +643,31 @@ select {
   font-size: 12px;
 }
 
-/*============ Media Queries ==========*/
+/*============ Media Queries Start==========*/
 
 /*===== Large devices (desktops, less than 1200px) ====*/
 @media (max-width: 1199.98px) {
   .container {
     max-width: 960px;
   }
-
   .card {
     width: 32%;
   }
   .card-content {
     width: 85%;
   }
+  .form__wrap-text {
+    width: 350px;
+  }
 }
 
 /*===== Medium devices (tablets, less than 992px) =====*/
-@media (max-width: 992px) {
-  /*===== Container ====*/
+@media (max-width: 991.98px) {
+  /*======= Container ======*/
   .container {
     max-width: 720px;
   }
-  /*===== Header ====*/
+  /*======= Header ======*/
   .header__logo {
     width: 100%;
     justify-content: center;
@@ -688,7 +691,7 @@ select {
   .btn-primary {
     padding: 11px 36px;
   }
-  /*===== Main ====*/
+  /*========== Main =========*/
   .main__img {
     width: 300px;
     height: 200px;
@@ -702,6 +705,7 @@ select {
   }
   .main__title-text {
     font-size: 20px;
+    padding-top: 20px;
   }
   .main__text {
     margin: 20px 0 18px 0;
@@ -730,7 +734,7 @@ select {
   .numbers__item {
     width: 45%;
   }
-  /*===== Video Section ====*/
+  /*====== Video Section =====*/
   .video__section-img {
     width: 350px;
     height: 250px;
@@ -740,24 +744,217 @@ select {
   }
   .main__text-container {
     width: 300px;
-    height: 200px;
   }
-  /*===== Form ====*/
+  /*======= Form =======*/
   .form {
     width: 400px;
   }
   .form__wrap-text {
     width: 250px;
   }
+  .btn-colored {
+    padding: 12px 25px;
+  }
 }
 
 /*===== Small devices (landscape phones, less than 768px) ====*/
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+  .webp .intro {
+    padding-bottom: 80px;
+  }
+  /*========== Main =========*/
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__section-top {
+    padding: 60px 0;
+  }
+  .main__title-text {
+    padding: 0;
+  }
+  .main__text {
+    margin: 20px 0 18px 0;
+    font-size: 13px;
+  }
+  .main__wrap {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  .main__img {
+    width: 450px;
+    height: 250px;
+  }
+  .play-btn {
+    width: 54px;
+    height: 54px;
+    left: 50%;
+    top: 50%;
+  }
+  /*===== Section with cards ====*/
+  .section__cards {
+    padding: 60px 0 60px;
+  }
+  .section__title {
+    font-size: 30px;
+  }
+  .card-text {
+    font-size: 11px;
+  }
+  .container-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+  /*====== Video Section =====*/
+  .video__section {
+    padding: 60px 0;
+  }
+  .video__section-img {
+    width: 450px;
+  }
+  .video__section-text {
+    margin: 18px 0;
+  }
+  .main__text-container {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  /*======= Form =======*/
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__section {
+    padding: 80px 0 100px;
+  }
+  .form__wrap-text {
+    width: 450px;
+  }
+  .form {
+    width: 450px;
+  }
+  /*======= Footer =======*/
+  .footer {
+    padding: 55px 0;
+  }
+  .footer__support {
+    margin-top: 40px;
+  }
 }
 
 /*==== X-Small devices (portrait phones, less than 576px) ====*/
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .container {
-    max-width: 540px;
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  /*========== Header,nav and intro =========*/
+  .header {
+    padding: 30px 0;
+  }
+  .nav {
+    text-align: center;
+  }
+  .webp .intro {
+    padding-bottom: 35px;
+  }
+  .intro__title {
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+  .intro__subtitle {
+    font-size: 16px;
+  }
+  .btn-primary {
+    padding: 8px 23px;
+  }
+  /*========== Main =========*/
+  .main__section-top {
+    padding: 50px 0;
+  }
+  .main__title-text {
+    font-size: 20px;
+  }
+  .main__text {
+    margin: 20px 0 18px 0;
+    font-size: 13px;
+  }
+  .main__text-container {
+    padding: 0 15px;
+  }
+  .main__wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main__img {
+    width: 100%;
+    height: 200px;
+  }
+  .play-btn {
+    width: 44px;
+    height: 44px;
+    left: 50%;
+    top: 50%;
+  }
+  /*===== Section with cards ====*/
+  .section__cards {
+    padding: 30px 0;
+  }
+  .section__title {
+    font-size: 25px;
+  }
+  .card-text {
+    font-size: 11px;
+  }
+  .card {
+    width: 60%;
+  }
+  .card-content {
+    width: 80%;
+  }
+  /*====== Video Section =====*/
+  .video__section-img {
+    width: 100%;
+  }
+  .video__section-text {
+    margin: 18px 0;
+  }
+  .main__text-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /*======= Form =======*/
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__section {
+    padding: 80px 0 100px;
+  }
+  .form__wrap-text {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  /*======= Footer =======*/
+  .footer__header {
+    margin-bottom: 20px;
+  }
+  .footer__support {
+    margin-top: 15px;
+  }
+  .copyright__section {
+    padding-bottom: 40px;
   }
 }
