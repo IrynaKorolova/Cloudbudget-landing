@@ -826,6 +826,9 @@ select {
     width: 450px;
     margin-bottom: 20px;
   }
+  .fab {
+    font-size: 25px;
+  }
   /*======= Form =======*/
   .form__section {
     padding: 80px 0 100px;
@@ -853,7 +856,7 @@ select {
     text-align: center;
   }
   .nav__link {
-    padding: 14px 10px;
+    padding: 12px 10px;
   }
   .webp .intro {
     padding-bottom: 35px;
@@ -929,7 +932,6 @@ select {
   }
   /*======= Form =======*/
   .form-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -945,6 +947,9 @@ select {
   /*======= Footer =======*/
   .footer__header {
     margin-bottom: 20px;
+  }
+  .footer__adress {
+    width: 150px;
   }
   .copyright__section {
     padding-bottom: 40px;
